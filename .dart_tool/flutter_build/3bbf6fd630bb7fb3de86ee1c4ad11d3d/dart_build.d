@@ -1,0 +1,1 @@
+ /Users/akylajabdykanova/flutter-lesson-2/.dart_tool/flutter_build/3bbf6fd630bb7fb3de86ee1c4ad11d3d/dart_build_result.json: 

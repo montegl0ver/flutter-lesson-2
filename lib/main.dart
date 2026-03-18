@@ -6,31 +6,49 @@ void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
       title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
       theme: ThemeData(
-        // useMaterial3: false,
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.pink,
       ),
-      // A widget which will be started on application startup
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Akylai was here :3'),
     );
   }
 }
 
 class MyHomePage extends StatelessWidget {
   final String title;
+
   const MyHomePage({super.key, required this.title});
 
   @override
   Widget build(BuildContext context) {
-    User user = User(firstName: "Adiltet", lastName: "Adiletov");
-    return Login();
+    User user = User(firstName: "Akylai", lastName: "Abdykanova");
+
+    return Scaffold(
+      backgroundColor: const Color(0xFFFFE4EC),
+      appBar: AppBar(
+        title: Text(title),
+        backgroundColor: const Color.fromARGB(255, 255, 126, 169),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            print("gotcha!");
+          },
+          style: ElevatedButton.styleFrom(
+            backgroundColor: const Color.fromARGB(255, 255, 126, 169),
+            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 15),
+          ),
+          child: const Text(
+            "click me",
+            style: TextStyle(fontSize: 18),
+          ),
+        ),
+      ),
+    );
   }
 }
